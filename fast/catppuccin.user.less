@@ -1,0 +1,40 @@
+/* ==UserStyle==
+@name           fast.com 
+@namespace      https://userstyles.world/user/emadadeldev
+@version        1.0.0
+@description    Light and Dark mode, hidden distractions
+@author         emadadeldev
+==/UserStyle== */
+@-moz-document domain("fast.com") {
+    /* fast.com */
+    
+    .powered-by-container,
+    .footer-container,
+    .language-selector-container {
+        display: none;
+    }
+
+    * {
+        font-family: monospace;
+        --background: #FFF;
+        --text: #111;
+        color: var(--text) !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        * {
+            --background: #111;
+            --text: #aaa;
+        }
+    }
+
+    html,
+    body {
+        background: var(--background);
+    }
+
+    .measurement-label,
+    .usage-info-container {
+        border-color: unset;
+    }
+}
