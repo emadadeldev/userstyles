@@ -2,22 +2,29 @@
 @name           fast.com 
 @namespace      https://userstyles.world/user/emadadeldev
 @version        1.0.0
-@description    Fast catppuccin theme, hidden distractions
+@description    Light and Dark mode, hidden distractions
 @author         emadadeldev
 ==/UserStyle== */
 @-moz-document domain("fast.com") {
     /* fast.com */
-    
     .powered-by-container,
     .footer-container,
     .language-selector-container {
         display: none;
     }
 
+    .logo.centered {
+        display: none !important;
+    }
+
     * {
         --background: #1e1e2e;
         --text: #111;
         color: var(--text) !important;
+    }
+
+    svg {
+        display: none !important;
     }
 
     @media (prefers-color-scheme: dark) {
