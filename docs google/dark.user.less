@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name         Google Docs Dark
+@namespace    userstyles.world/user/emadadeldev
+@version      1.0.0
+@description  Google Docs dark mode
+@author       emadadeldev
+==/UserStyle== */
+
+@-moz-document domain("docs.google.com") {
+  body {
+    filter: invert(1) hue-rotate(180deg);
+    background: #1e1e2e;
+  }
+
+  img, video {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
