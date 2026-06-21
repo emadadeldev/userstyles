@@ -1,0 +1,42 @@
+/* ==UserStyle==
+@name         JetBrains Mono Nerd Font - Global
+@namespace    github.com/emadadeldev/
+@version      1.0.0
+@description  Force JetBrains Mono Nerd Font on all websites
+@author       emadadeldev
+==/UserStyle== */
+
+@-moz-document regexp(".*") {
+
+    @font-face {
+        font-family: "JetBrainsMonoNerd";
+        src: url("https://cdn.jsdelivr.net/gh/Nick2bad4u/nerd-fonts-woff2@v1.0.0/fonts/woff2/JetBrainsMono/JetBrainsMonoNerdFont-Regular.woff2")
+             format("woff2");
+        font-display: swap;
+    }
+
+    :root {
+        --jb-font:
+            "JetBrainsMonoNerd",
+            "JetBrains Mono Nerd",
+            "JetBrains Mono",
+            monospace;
+    }
+
+    html,
+    body,
+    input,
+    textarea,
+    select,
+    button,
+    code,
+    pre,
+    kbd,
+    samp {
+        font-family: var(--jb-font) !important;
+    }
+
+    * {
+        font-family: inherit !important;
+    }
+}
